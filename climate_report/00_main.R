@@ -103,7 +103,9 @@ required_packages <- c(
   "ggspatial",
   "ggtext",
   "ggnewscale",
-  "patchwork"
+  "patchwork",
+  "networkD3",
+  "webshot"
 )
 
 # Function to check and install missing packages
@@ -156,6 +158,12 @@ library(webshot2)
 library(ggnewscale)
 library(patchwork)  
 library(knitr)
+library(networkD3)
+library(rvest)  
+library(webshot)
+library(htmltools)
+library(htmlwidgets)
+
 # for combining plots
 
 # FUNCTIONS ---------------------------------------------------------------
@@ -187,7 +195,7 @@ shared_fld_draf_paper = "C:/Users/dbarro/UNICEF/ESARO-PPM Collaboration Site - R
 
 
 # b.  CODE
-code_data_root_fld = "C:/Users/dbarro/GitHub_UNICEF/unicef_code/ESARO/climate_report"
+code_data_root_fld = "C:/Users/dbarro/GitHub_UNICEF/unicef_code/ESARO/climate_report/"
 
 
 # c. OUTPUT 
